@@ -1,0 +1,9 @@
+spring:
+    profiles:
+        active: dev
+
+greeting:
+    dev:
+        message: "Bonjour du profil dev !"
+    prod:
+        message: "Bonjour du profil prod !"
