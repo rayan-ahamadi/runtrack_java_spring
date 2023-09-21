@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Runtrack</title>
+    </head>
+    <body>
+        <ul>
+            <li th:each="objet : ${liste}"><p th:text="${objet}"></p></li>
+        </ul>
+        <form th:action="@{/FormsResult}" method="post">
+            <input type="text" name="name" placeholder="name" required>
+            <input type="text" name="age" placeholder="age" required>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+
+</html>

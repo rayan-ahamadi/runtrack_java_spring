@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Runtrack</title>
+    </head>
+    <body>
+        <h1 th:text=" 'Salut ! ' + ${name}" ></h1>
+        <ul>
+            <li th:each="objet : ${liste}"><p th:text="${objet}"></p></li>
+        </ul>
+
+    </body>
+
+</html>
